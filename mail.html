@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Sender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .btn-mail {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .email-form {
+            margin-top: 50px;
+        }
+        input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        label {
+            margin-bottom: 5px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Email Sender App</h1>
+    <button class="btn-mail" onclick="document.getElementById('emailForm').scrollIntoView({behavior: 'smooth'})">Mail</button>
+
+    <div class="email-form" id="emailForm">
+        <h2>Send an Email</h2>
+        <form action="/send_email" method="POST">
+            <label for="to">To:</label>
+            <input type="email" name="to" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea name="message" rows="6" required></textarea>
+
+            <button type="submit" class="btn-mail">Send Email</button>
+        </form>
+    </div>
+</body>
+</html>

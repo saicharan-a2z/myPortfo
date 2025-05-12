@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(
+      135deg,
+      hsl(210, 60%, 50%),  
+      hsl(270, 60%, 50%),  
+      hsl(330, 60%, 50%));
+    min-height: 60%;
+    margin: 0;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+.navbar {
+    height:4rem;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: hsl(250, 40%, 30%); 
+    border-bottom: 1px solid whitesmoke;
+}  
+.navbar button:hover{
+  color: hsl(220, 80%, 65%);
+}
+.navbar button{
+  height: 50px;
+  width: 6rem;
+  border-radius: 15%;
+  margin-top: 8px;
+  background-color: hsl(220, 80%, 75%);
+  font-family: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #ffff;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 8px;
+  gap: 8px;
+}
+
+.instagram {
+  background-color: hsl(329, 70%, 50%);  
+}
+
+.linkedin {
+  background-color: hsl(201, 100%, 35%); 
+}
+.social {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+}
